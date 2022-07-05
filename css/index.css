@@ -27,8 +27,7 @@ body {
     visibility: hidden;
   }
   .product{
-    display: flex;
-    flex-direction:column;
+    display: inline;
     align-content: center;
   }
   .social{
