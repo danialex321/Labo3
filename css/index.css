@@ -16,8 +16,13 @@ body {
   body{
     background-color: red;
   }
-
+  .logo{
+  }
   .menu{
+    display: flex;
+    flex-direction:column;
+  }
+  .product{
     display: flex;
     flex-direction:column;
   }
@@ -31,6 +36,10 @@ body {
     display: flex;
     flex-direction:column;
   }
+  .product{
+    display: flex;
+    flex-direction:column;
+  }
 }
 
 @media screen and (min-width: 1025px){
@@ -38,6 +47,11 @@ body {
     background-color: green;
   }
   .menu{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:flex;
+  }
+  .product{
     display: flex;
     flex-direction:row;
     flex-wrap:flex;
