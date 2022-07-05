@@ -21,21 +21,32 @@ body {
   }
   .hamburger{
     align-self: flex-start;
+    background-color: gray;
+  }
+  .menu{
+    visibility: hidden;
   }
   .product{
     display: flex;
     flex-direction:column;
     align-content: center;
   }
+  .social{
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+  }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (min-width: 768px) and (max-width:1024px){
   body{
     background-color: yellow;
   }
-  .menu{
-    display: flex;
-    flex-direction:column;
+  .logo{
+    align-self: center;
+  }
+  .hamburger{
+    align-self: flex-end;
   }
   .product{
     display: flex;
