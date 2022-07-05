@@ -12,13 +12,12 @@ body {
   width: 50px;
 }
 
-@media screen and (min-width: 380px){
+@media screen and (max-width: 767px){
   body{
     background-color: red;
-    align-content: center;
   }
-  .logo{
-    align-self: center;
+  header{
+    text-align:center;
   }
   .hamburger{
     align-self: flex-start;
@@ -28,14 +27,17 @@ body {
     display: none;
   }
   .product{
-    display:inline-block;
-    align-content: center;
+    display:block;
+    text-align: center;
   }
   .social{
     list-style: none;
-    display: flex;
-    flex-direction:row;
-    align-content: center;
+    display:flex;
+    flex-orientation:row;
+    padding:15px 15px 15px 15px;
+  }
+  footer{
+    align-items:center;
   }
 }
 
@@ -43,15 +45,28 @@ body {
   body{
     background-color: yellow;
   }
-  .logo{
-    align-self: center;
+  header{
+    text-align:center;
   }
   .hamburger{
-    align-self: flex-end;
+    align-self: flex-start;
+    background-color: gray;
+  }
+  .menu{
+    display: none;
   }
   .product{
     display: flex;
     flex-direction:column;
+  }
+  .social{
+    list-style: none;
+    display:flex-wrap;
+    flex-orientation:row;
+    padding:15px 15px 15px 15px;
+  }
+  footer{
+    align-items:center;
   }
 }
 
