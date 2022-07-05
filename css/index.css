@@ -12,7 +12,7 @@ body {
   width: 50px;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 380px){
   body{
     background-color: red;
   }
@@ -31,13 +31,14 @@ body {
     align-content: center;
   }
   .social{
+    list-style: none;
     display: flex;
     flex-direction:row;
     align-content: center;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width:1024px){
+@media screen (max-width:1024px){
   body{
     background-color: yellow;
   }
