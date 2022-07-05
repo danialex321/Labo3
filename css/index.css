@@ -27,7 +27,7 @@ body {
     display: none;
   }
   .product{
-    display: inline;
+    display:inline-block;
     align-content: center;
   }
   .social{
