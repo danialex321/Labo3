@@ -26,6 +26,11 @@ body {
   .product{
     display:block;
     text-align: center;
+    box-sizing:inherit;
+  }
+  section {
+  display: block;
+  border:2px solid lightgray;
   }
   .social{
     list-style: none;
@@ -39,9 +44,6 @@ body {
 }
 
 @media screen and (max-width: 1024px){
-  body{
-    background-color: purple;
-  }
   header{
     text-align:center;
   }
@@ -55,8 +57,12 @@ body {
   .product{
     display:block;
     margin: 10px;
-    padding:10px;
     text-align: center;
+  }
+  section {
+  display: block;
+  border:2px solid lightgray;
+  margin:auto;
   }
   .social{
     list-style: none;
@@ -69,27 +75,40 @@ body {
 }
 
 @media screen and (min-width: 1025px){
-  body{
-    background-color: green;
-  }
   header{
     text-align:center;
   }
   .hamburger{
-    align-self: flex-start;
-    background-color: gray;
+    visibility: hidden;
   }
   .menu{
-    display:flex-wrap;
+    display:block;
+    background-color:gray;
+    list-style: none;
+    display:flex;
+    flex-orientation:row;
+    align-content:right;
+
+  }
+  section {
+    display: block;
+    border:2px solid lightgray;
+    width: 400px;
+    height: 340px;
+    padding:10px 10px 10px 10px;
+    margin:auto;
+  }
+  main{
+    display:flex;
     flex-orientation:row;
   }
   .product{
-    display: flex;
-    flex-direction:row;
+    margin: auto;
+    text-align: center;
   }
   .social{
     list-style: none;
-    display:flex-wrap;
+    display:flex;
     flex-orientation:row;
     padding:15px 15px 15px 15px;
   }
