@@ -24,7 +24,7 @@ body {
     background-color: gray;
   }
   .menu{
-    visibility: hidden;
+    display: none;
   }
   .product{
     display: inline;
